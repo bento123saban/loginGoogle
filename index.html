@@ -1,7 +1,7 @@
 <html lang="en">
    <head>
       <title>Login With Google</title>
-      <meta name="google-signin-client_id" content="1003705308994-ll7st9nkm3t6723am5v17g61hvi56hh4.apps.googleusercontent.com">
+      <meta name="google-signin-client_id" content="682153086273-cvnoual5uc002rbisi3t1ctbgmd5dot2.apps.googleusercontent.com">
       <script src="https://apis.google.com/js/platform.js" async defer></script>
    </head>
    <body>
@@ -24,8 +24,8 @@
             // The ID token you need to pass to your backend:
             var id_token = googleUser.getAuthResponse().id_token;
             console.log("ID Token: " + id_token);
-            document.querySelector("#name").innerHTML = data
-            document.querySelector("#email").innerHTML = data
+            document.querySelector("p#name").innerHTML = data
+            document.querySelector("p#email").innerHTML = data
          }
       </script>
    </body>
