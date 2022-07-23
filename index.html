@@ -1,6 +1,6 @@
 <html lang="en">
    <head>
-      <meta name="google-signin-scope" content="profile email">
+      <title>Login With Google</title>
       <meta name="google-signin-client_id" content="1003705308994-ll7st9nkm3t6723am5v17g61hvi56hh4.apps.googleusercontent.com">
       <script src="https://apis.google.com/js/platform.js" async defer></script>
    </head>
@@ -11,6 +11,8 @@
       <script>
          function onSignIn(googleUser) {
             // Useful data for your client-side scripts:
+            console.log(JSON.stringify(googleUser.getBasicProfile()))
+            
             var profile = googleUser.getBasicProfile();
             console.log("ID: " + profile.getId()); // Don't send this directly to your server!
             console.log('Full Name: ' + profile.getName());
